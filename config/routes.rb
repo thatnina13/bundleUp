@@ -7,6 +7,12 @@ Rails.application.routes.draw do
 
   # Custom routes
   get '/items' => 'items#index'
+  get '/items/:id' => 'items#show'
+  delete '/items/:id' => 'items#show'
+  post '/items' => 'items#create'
+  patch '/items/:id' => 'items#update'
+
+
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
