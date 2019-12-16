@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Custom routes
   get '/items' => 'items#index'
   get '/items/:id' => 'items#show'
-  delete '/items' => 'items#destroy'
+  delete '/items/:id' => 'items#destroy'
   post '/items' => 'items#create'
   patch '/items/:id' => 'items#update'
 
